@@ -1,0 +1,734 @@
+<ADXFORMAT version="1.01" />
+<!-- Written 07/27/2017 11:32:52 -->
+<ADXHEADER>
+    <guid>2c3fdd4d-7e47-4228-992e-6ad89a576d1b</guid>
+    <flags>0x00</flags>
+    <objectcount>45</objectcount>
+    <userversion>v2</userversion>
+    <author>R. Miecznik</author>
+    <baud>9600</baud>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" baud="0" signed="0" lsbfirst="0" float="0" />
+    <monitorcmd>all OCTET macr</monitorcmd>
+</ADXHEADER>
+
+<ADXVALUE id="afr atmega" idhash="0xC2EF7BA0" title="AFR_ATMEGA">
+    <flags>0x0000000C</flags>
+    <parentcmdidhash>0xBE5CFD8B</parentcmdidhash>
+    <packetoffset>0x06</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="9.000000" high="22.000000" />
+    <alarms low="12.000000" high="17.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X/1000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="ECTraw" idhash="0x5F428AED" title="ECTraw">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <packetoffset>0x05</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>13</datatype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="IATraw" idhash="0x67428AD3" title="IATraw">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <packetoffset>0x06</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXHISTOGRAM id="knock retard" idhash="0x8D897BEA" title="knock">
+    <rows>16</rows>
+    <cols>16</cols>
+    <xmin>0.000000</xmin>
+    <xmax>0.000000</xmax>
+    <ymin>0.000000</ymin>
+    <ymax>0.000000</ymax>
+    <rowval index="0" val="480.000000" />
+    <rowval index="1" val="600.000000" />
+    <rowval index="2" val="800.000000" />
+    <rowval index="3" val="1150.000000" />
+    <rowval index="4" val="1500.000000" />
+    <rowval index="5" val="1699.000000" />
+    <rowval index="6" val="2000.000000" />
+    <rowval index="7" val="2249.000000" />
+    <rowval index="8" val="2900.000000" />
+    <rowval index="9" val="3300.000000" />
+    <rowval index="10" val="3600.000000" />
+    <rowval index="11" val="3950.000000" />
+    <rowval index="12" val="4801.000000" />
+    <rowval index="13" val="5401.000000" />
+    <rowval index="14" val="6000.000000" />
+    <rowval index="15" val="7052.000000" />
+    <colval index="0" val="0.000000" />
+    <colval index="1" val="13.000000" />
+    <colval index="2" val="27.000000" />
+    <colval index="3" val="40.000000" />
+    <colval index="4" val="53.000000" />
+    <colval index="5" val="67.000000" />
+    <colval index="6" val="80.000000" />
+    <colval index="7" val="93.000000" />
+    <colval index="8" val="107.000000" />
+    <colval index="9" val="120.000000" />
+    <colval index="10" val="133.000000" />
+    <colval index="11" val="147.000000" />
+    <colval index="12" val="160.000000" />
+    <colval index="13" val="173.000000" />
+    <colval index="14" val="187.000000" />
+    <colval index="15" val="200.000000" />
+    <historysize>99</historysize>
+    <xidhash>0xCD7B53DB</xidhash>
+    <yidhash>0x12E7112D</yidhash>
+    <zidhash>0xEB75ADB8</zidhash>
+</ADXHISTOGRAM>
+
+<ADXHISTOGRAM id="AFR" idhash="0xCD13BC7B" title="AFR">
+    <rows>16</rows>
+    <cols>16</cols>
+    <xmin>0.000000</xmin>
+    <xmax>0.000000</xmax>
+    <ymin>0.000000</ymin>
+    <ymax>0.000000</ymax>
+    <rowval index="0" val="480.000000" />
+    <rowval index="1" val="600.000000" />
+    <rowval index="2" val="800.000000" />
+    <rowval index="3" val="1150.000000" />
+    <rowval index="4" val="1500.000000" />
+    <rowval index="5" val="1699.000000" />
+    <rowval index="6" val="2000.000000" />
+    <rowval index="7" val="2249.000000" />
+    <rowval index="8" val="2900.000000" />
+    <rowval index="9" val="3300.000000" />
+    <rowval index="10" val="3600.000000" />
+    <rowval index="11" val="3950.000000" />
+    <rowval index="12" val="4801.000000" />
+    <rowval index="13" val="5401.000000" />
+    <rowval index="14" val="6000.000000" />
+    <rowval index="15" val="7052.000000" />
+    <colval index="0" val="0.000000" />
+    <colval index="1" val="13.000000" />
+    <colval index="2" val="27.000000" />
+    <colval index="3" val="40.000000" />
+    <colval index="4" val="53.000000" />
+    <colval index="5" val="67.000000" />
+    <colval index="6" val="80.000000" />
+    <colval index="7" val="93.000000" />
+    <colval index="8" val="107.000000" />
+    <colval index="9" val="120.000000" />
+    <colval index="10" val="133.000000" />
+    <colval index="11" val="147.000000" />
+    <colval index="12" val="200.000000" />
+    <colval index="13" val="200.000000" />
+    <colval index="14" val="200.000000" />
+    <colval index="15" val="200.000000" />
+    <historysize>99</historysize>
+    <xidhash>0xCD7B53DB</xidhash>
+    <yidhash>0x12E7112D</yidhash>
+    <zidhash>0x4399B4E3</zidhash>
+</ADXHISTOGRAM>
+
+<ADXMONITOR id="lambda" idhash="0xC825E195" title="lambda">
+    <mainbkgcolor>0x00FFFFFF</mainbkgcolor>
+    <plotbkgcolor>0x00F0F0F0</plotbkgcolor>
+    <plotoutlinecolor>0x00000000</plotoutlinecolor>
+    <titlecolor>0x00000000</titlecolor>
+    <timeaxiscolor>0x00000000</timeaxiscolor>
+    <entrycount>3</entrycount>
+    <ADXMONSERIES linecolor="0x441DE2" axiscolor="0x441DE2" itemidhash="0x12E7112D" />
+    <ADXMONSERIES linewidth="3" linecolor="0x00FF00" axiscolor="0x00FF00" itemidhash="0xC2EF7BA0" />
+    <ADXMONSERIES linecolor="0xFF0000" axiscolor="0xFF0000" itemidhash="0xCD7B53DB" />
+</ADXMONITOR>
+
+<ADXLOOKUPTABLE id="NB_AFR_tab" idhash="0x403DD61B" title="NB AFR tab">
+    <inputtype>3</inputtype>
+    <outputtype>3</outputtype>
+    <lookupmode>0</lookupmode>
+    <entrycount>17</entrycount>
+    <tableentry input="0.100000" output="17.000000" />
+    <tableentry input="0.200000" output="16.000000" />
+    <tableentry input="0.300000" output="15.500000" />
+    <tableentry input="0.400000" output="15.000000" />
+    <tableentry input="0.500000" output="14.700000" />
+    <tableentry input="0.600000" output="14.600000" />
+    <tableentry input="0.700000" output="14.500000" />
+    <tableentry input="0.750000" output="14.350000" />
+    <tableentry input="0.800000" output="14.000000" />
+    <tableentry input="0.820000" output="13.000000" />
+    <tableentry input="0.830000" output="13.000000" />
+    <tableentry input="0.860000" output="13.000000" />
+    <tableentry input="0.880000" output="12.900000" />
+    <tableentry input="0.900000" output="12.800000" />
+    <tableentry input="0.950000" output="12.720000" />
+    <tableentry input="1.000000" output="12.700000" />
+    <tableentry input="1.600000" output="12.700000" />
+</ADXLOOKUPTABLE>
+
+<ADXVALUE id="NB_AFR" idhash="0x4A49B4F2" title="NB AFR">
+    <flags>0x0000000C</flags>
+    <units>NB AFR</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="12.000000" high="18.000000" />
+    <alarms low="13.000000" high="16.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>28</datatype>
+    <unittype>2</unittype>
+    <MATH equation="X" lookupidhash="0x403DD61B">
+        <VAR varID="X" type="link" linkIDHash="0xCD183D5B" />
+    </MATH>
+</ADXVALUE>
+
+<ADXLOOKUPTABLE id="OXStab" idhash="0x1E84940C" title="OXS_V">
+    <inputtype>3</inputtype>
+    <outputtype>3</outputtype>
+    <lookupmode>0</lookupmode>
+    <entrycount>6</entrycount>
+    <tableentry input="0.000000" output="1.650000" />
+    <tableentry input="7.000000" output="1.600000" />
+    <tableentry input="49.000000" output="1.300000" />
+    <tableentry input="99.000000" output="0.950000" />
+    <tableentry input="162.000000" output="0.500000" />
+    <tableentry input="232.000000" output="0.000000" />
+</ADXLOOKUPTABLE>
+
+<ADXLOOKUPTABLE id="Rco" idhash="0xCD0F597B" title="Rco">
+    <inputtype>3</inputtype>
+    <outputtype>3</outputtype>
+    <lookupmode>0</lookupmode>
+    <entrycount>24</entrycount>
+    <tableentry input="0.000000" output="0.000000" />
+    <tableentry input="23.000000" output="100.000000" />
+    <tableentry input="42.000000" output="200.000000" />
+    <tableentry input="59.000000" output="300.000000" />
+    <tableentry input="72.000000" output="400.000000" />
+    <tableentry input="85.000000" output="500.000000" />
+    <tableentry input="95.000000" output="600.000000" />
+    <tableentry input="105.000000" output="700.000000" />
+    <tableentry input="113.000000" output="800.000000" />
+    <tableentry input="120.000000" output="900.000000" />
+    <tableentry input="127.000000" output="1000.000000" />
+    <tableentry input="133.000000" output="1100.000000" />
+    <tableentry input="139.000000" output="1200.000000" />
+    <tableentry input="144.000000" output="1300.000000" />
+    <tableentry input="149.000000" output="1400.000000" />
+    <tableentry input="153.000000" output="1500.000000" />
+    <tableentry input="156.000000" output="1600.000000" />
+    <tableentry input="170.000000" output="2000.000000" />
+    <tableentry input="182.000000" output="2500.000000" />
+    <tableentry input="190.000000" output="3000.000000" />
+    <tableentry input="200.000000" output="3600.000000" />
+    <tableentry input="207.000000" output="4400.000000" />
+    <tableentry input="208.000000" output="4500.000000" />
+    <tableentry input="210.000000" output="12000.000000" />
+</ADXLOOKUPTABLE>
+
+<ADXLOOKUPTABLE id="IATtab" idhash="0x67049433" title="IATtab">
+    <inputtype>3</inputtype>
+    <outputtype>3</outputtype>
+    <lookupmode>0</lookupmode>
+    <entrycount>18</entrycount>
+    <tableentry input="16.000000" output="130.000000" />
+    <tableentry input="20.000000" output="120.000000" />
+    <tableentry input="25.000000" output="110.000000" />
+    <tableentry input="32.000000" output="100.000000" />
+    <tableentry input="40.000000" output="90.000000" />
+    <tableentry input="51.000000" output="80.000000" />
+    <tableentry input="64.000000" output="70.000000" />
+    <tableentry input="80.000000" output="60.000000" />
+    <tableentry input="100.000000" output="50.000000" />
+    <tableentry input="121.000000" output="40.000000" />
+    <tableentry input="145.000000" output="30.000000" />
+    <tableentry input="168.000000" output="20.000000" />
+    <tableentry input="190.000000" output="10.000000" />
+    <tableentry input="209.000000" output="0.000000" />
+    <tableentry input="224.000000" output="-10.000000" />
+    <tableentry input="235.000000" output="-20.000000" />
+    <tableentry input="242.000000" output="-30.000000" />
+    <tableentry input="248.000000" output="-40.000000" />
+</ADXLOOKUPTABLE>
+
+<ADXLOOKUPTABLE id="ECTtab" idhash="0x5F04940D" title="ECTtab">
+    <inputtype>3</inputtype>
+    <outputtype>3</outputtype>
+    <lookupmode>0</lookupmode>
+    <entrycount>18</entrycount>
+    <tableentry input="3.000000" output="130.000000" />
+    <tableentry input="3.500000" output="120.000000" />
+    <tableentry input="4.000000" output="110.000000" />
+    <tableentry input="5.600000" output="100.000000" />
+    <tableentry input="7.000000" output="90.000000" />
+    <tableentry input="9.500000" output="80.000000" />
+    <tableentry input="12.700000" output="70.000000" />
+    <tableentry input="17.000000" output="60.000000" />
+    <tableentry input="23.000000" output="50.000000" />
+    <tableentry input="31.000000" output="40.000000" />
+    <tableentry input="43.500000" output="30.000000" />
+    <tableentry input="60.000000" output="20.000000" />
+    <tableentry input="80.000000" output="10.000000" />
+    <tableentry input="106.000000" output="0.000000" />
+    <tableentry input="135.000000" output="-10.000000" />
+    <tableentry input="166.000000" output="-20.000000" />
+    <tableentry input="193.000000" output="-30.000000" />
+    <tableentry input="216.000000" output="-40.000000" />
+</ADXLOOKUPTABLE>
+
+<ADXLISTVIEW id="LIST1" idhash="0x41F46A55" title="Item List 1">
+    <entrycount>40</entrycount>
+    <ADXLVENTRY entrytype="0" itemidhash="0x42B863F8" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD7B53DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD183D5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDE6BCF10" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xD0BC9126" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE333BDCB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD1ABE5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xEAE3BA0C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD66CE5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD6F1BDB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xEB75ADB8" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x373A8A54" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3685F7E3" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xCF18FE54" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xEB75B718" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x373A90F4" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3685ED43" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xCF18E4F4" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xEB75A818" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x373A8FF4" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3685F243" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xCF18FBF4" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xEB75AA18" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x373A8DF4" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3685F043" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xCF18F9F4" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x15F54297" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x5A1157E9" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x5854325D" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x0EFEC8D7" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x15F55837" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x5A114D49" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD05865B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x12E7112D" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x3B5EFF4B" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xC2812F0A" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x5BA6D2DA" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3B5F1661" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5F428AED" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x67428AD3" />
+</ADXLISTVIEW>
+
+<ADXLISTVIEW id="FAULT" idhash="0x3554DB75" title="Fault list">
+    <entrycount>7</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x9B3AA975" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x6AFAA974" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xED4CA975" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x5E44DDC2" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x1ED523EC" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0x1ED5394C" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" itemidhash="0xAF3F8539" title="ENTRY DEPENDENCY REMOVED!" color="000000FF" />
+</ADXLISTVIEW>
+
+<ADXDASHBOARD id="ADC data" idhash="0x63876F39" title="AD_Data">
+    <entrycount>11</entrycount>
+    <ADXDGENTRY gaugetype="0" itemidhash="0x12E7112D" left="0" top="0" right="20" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD183D5B" left="25" top="0" right="45" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0x42B863F8" left="50" top="0" right="70" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD7B53DB" left="75" top="0" right="95" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xC2EF7BA0" left="0" top="50" right="20" bottom="95" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xC2EF7BA0" left="25" top="50" right="45" bottom="95" arcmax="300" alarmlowcolor="0x001DA924" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xA987D6DD" left="70" top="50" right="80" bottom="70" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xEB75B718" left="50" top="50" right="70" bottom="95" arcmax="300" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x12E7112D" left="70" top="70" right="80" bottom="90" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD66CE5B" left="80" top="50" right="90" bottom="70" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD1ABE5B" left="80" top="70" right="90" bottom="90" />
+</ADXDASHBOARD>
+
+<ADXDASHBOARD id="measurements" idhash="0x7B97A2BB" title="meas">
+    <entrycount>11</entrycount>
+    <ADXDGENTRY gaugetype="0" itemidhash="0xEB75ADB8" left="20" top="0" right="35" bottom="45" arcmax="300" bordercolor="0x00404000" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xEB75B718" left="40" top="0" right="55" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xEB75A818" left="60" top="0" right="75" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xEB75AA18" left="80" top="0" right="95" bottom="45" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0x3685F7E3" left="20" top="45" right="35" bottom="90" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0x3685ED43" left="40" top="45" right="55" bottom="90" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0x3685F243" left="60" top="45" right="75" bottom="90" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0x3685F043" left="80" top="45" right="95" bottom="90" arcmax="300" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x3B5F1661" left="0" top="25" right="20" bottom="45" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD05865B" left="0" top="50" right="20" bottom="70" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x12E7112D" left="0" top="75" right="20" bottom="95" />
+</ADXDASHBOARD>
+
+<ADXMACRO id="all OCTET macr" idhash="0xFA790EEC" title="listen for frames" repeatcount="1">
+    <NODE commandID="OCTET1" repeatcount="1" />
+    <NODE commandID="OCTET2" repeatcount="1" />
+    <NODE commandID="OCTET3" repeatcount="1" />
+</ADXMACRO>
+
+<ADXVALUE id="BattVLT" idhash="0x42B863F8" title="Battery Voltage">
+    <flags>0x00000002</flags>
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>V</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="8.000000" high="20.000000" />
+    <alarms low="0.000000" high="20.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>66</datatype>
+    <unittype>32</unittype>
+    <MATH equation="X*0.0938673341677096">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="MAP" idhash="0xCD7B53DB" title="MAP">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>kPa</units>
+    <packetoffset>0x01</packetoffset>
+    <range low="0.000000" high="200.000000" />
+    <alarms low="12.000000" high="16.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>24</datatype>
+    <unittype>17</unittype>
+    <MATH equation="X/255*215">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="MAPRAW" idhash="0xA987D6DD" title="map raw">
+    <desc>aw</desc>
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <packetoffset>0x01</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>0</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="OXS" idhash="0xCD183D5B" title="OXS">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>V</units>
+    <packetoffset>0x02</packetoffset>
+    <range low="0.000000" high="2.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <datatype>30</datatype>
+    <unittype>32</unittype>
+    <MATH equation="x" lookupidhash="0x1E84940C">
+        <VAR varID="x" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="raw oxs value" idhash="0x1981DCE8" title="OXS_RAW">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <packetoffset>0x02</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="SW" idhash="0xDE6BCF10" title="Throttle_SW">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>-</units>
+    <packetoffset>0x03</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <datatype>57</datatype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="KNOCK_V" idhash="0xD0BC9126" title="Knock Voltage">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>V</units>
+    <packetoffset>0x04</packetoffset>
+    <range low="0.000000" high="5.000000" />
+    <alarms low="0.000000" high="5.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <unittype>32</unittype>
+    <MATH equation="X*(5.0/255.0)">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="ECT" idhash="0xCD1ABE5B" title="ECT">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>C ect</units>
+    <packetoffset>0x05</packetoffset>
+    <range low="-40.000000" high="140.000000" />
+    <alarms low="-40.000000" high="130.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <datatype>13</datatype>
+    <unittype>15</unittype>
+    <MATH equation="X" lookupidhash="0x5F04940D">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="ECT raw" idhash="0xE333BDCB" title="ECT_index">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <packetoffset>0x05</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>0</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="IAT" idhash="0xCD66CE5B" title="IAT">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>C iat</units>
+    <packetoffset>0x06</packetoffset>
+    <range low="0.000000" high="60.000000" />
+    <alarms low="0.000000" high="16.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <datatype>19</datatype>
+    <unittype>15</unittype>
+    <MATH equation="X" lookupidhash="0x67049433">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="IAT_raw" idhash="0xEAE3BA0C" title="IAT_index">
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <packetoffset>0x06</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>0</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="WB AFR" idhash="0x4399B4E3" title="WB AFR">
+    <flags>0x0000000C</flags>
+    <parentcmdidhash>0xDF51E3ED</parentcmdidhash>
+    <units>A/F</units>
+    <packetoffset>0x07</packetoffset>
+    <range low="10.000000" high="19.000000" />
+    <alarms low="12.000000" high="16.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <unittype>21</unittype>
+    <MATH equation="x*10/255+9">
+        <VAR varID="x" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="RETARD1" idhash="0xEB75ADB8" title="Retard1">
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="20.000000" />
+    <alarms low="0.000000" high="5.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="KNOCK1" idhash="0x3685F7E3" title="Knock1">
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x01</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="RETARD2" idhash="0xEB75B718" title="Retard2">
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x02</packetoffset>
+    <range low="0.000000" high="20.000000" />
+    <alarms low="0.000000" high="5.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="KNOCK2" idhash="0x3685ED43" title="Knock2">
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x03</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="RETARD3" idhash="0xEB75A818" title="Retard3">
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x04</packetoffset>
+    <range low="0.000000" high="20.000000" />
+    <alarms low="0.000000" high="5.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="KNOCK3" idhash="0x3685F243" title="Knock3">
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x05</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="RETARD4" idhash="0xEB75AA18" title="Retard4">
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x06</packetoffset>
+    <range low="0.000000" high="20.000000" />
+    <alarms low="0.000000" high="5.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="KNOCK4" idhash="0x3685F043" title="Knock4">
+    <parentcmdidhash>0xDF51F94D</parentcmdidhash>
+    <packetoffset>0x07</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="WOT" idhash="0xCD05865B" title="WOT">
+    <parentcmdidhash>0xDF51E64D</parentcmdidhash>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="RPM_H_L" idhash="0x12E7112D" title="RPM">
+    <desc>2 bytes of RPM reading</desc>
+    <parentcmdidhash>0xDF51E64D</parentcmdidhash>
+    <packetoffset>0x06</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="8000.000000" />
+    <alarms low="0.000000" high="8000.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <datatype>6</datatype>
+    <unittype>4</unittype>
+    <MATH equation="30000000/X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="raw rpm value" idhash="0x19815428" title="RPM_RAW">
+    <parentcmdidhash>0xDF51E64D</parentcmdidhash>
+    <packetoffset>0x06</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="65536.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="ADVANCE" idhash="0x3B5F1661" title="Advance">
+    <parentcmdidhash>0xDF51E64D</parentcmdidhash>
+    <packetoffset>0x02</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="(X*-0.351563)+73.9">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXCLISTENPACKET id="OCTET1" idhash="0xDF51E3ED" title="Listen for Octet1" flags="0x00000001">
+    <desc>//FRAME&#009;0XFF&#013;&#010;#define&#009;BATT_V_IDX&#009;0&#013;&#010;#define&#009;MAP_IDX&#009;&#009;1&#013;&#010;#define&#009;LAMD_IDX&#009;2&#013;&#010;#define&#009;IDL_SW_IDX&#009;3&#013;&#010;#define&#009;KNOCK_IDX&#009;4&#013;&#010;#define&#009;ECT_IDX&#009;&#009;5&#013;&#010;#define&#009;IAT_IDX&#009;&#009;6&#013;&#010;#define&#009;AFR_DGI_ID&#009;7</desc>
+    <listentimeout>100</listentimeout>
+    <packetbodylength>8</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>8</packetsize>
+    <headerstring size="2">F5FF</headerstring>
+</ADXCLISTENPACKET>
+
+<ADXCLISTENPACKET id="OCTET2" idhash="0xDF51F94D" title="Listen for Octet2" flags="0x00000001">
+    <desc>//FRAME&#009;0XFE&#013;&#010;#define&#009;RETARD_IDX_CYL1&#009;&#009;0&#013;&#010;#define&#009;KNOCK_IDX_CYL1&#009;&#009;1&#013;&#010;#define&#009;RETARD_IDX_CYL2&#009;&#009;2&#013;&#010;#define&#009;KNOCK_IDX_CYL2&#009;&#009;3&#013;&#010;#define&#009;RETARD_IDX_CYL3&#009;&#009;4&#013;&#010;#define&#009;KNOCK_IDX_CYL3&#009;&#009;5&#013;&#010;#define&#009;RETARD_IDX_CYL4&#009;&#009;6&#013;&#010;#define&#009;KNOCK_IDX_CYL4&#009;&#009;7</desc>
+    <listentimeout>100</listentimeout>
+    <packetbodylength>8</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>8</packetsize>
+    <headerstring size="2">F5FE</headerstring>
+</ADXCLISTENPACKET>
+
+<ADXCLISTENPACKET id="OCTET3" idhash="0xDF51E64D" title="Listen for Octet3" flags="0x00000001">
+    <desc>//FRAME&#009;0XFD&#013;&#010;#define&#009;WOT_IDX&#009;&#009;&#009;0&#013;&#010;#define&#009;KNOCK_CYL_FLAGS_IDX&#009;1&#013;&#010;#define&#009;ADVANCE_IDX&#009;                2&#013;&#010;#define&#009;ENGINE_STALL_IDX&#009;                3&#013;&#010;#define&#009;FUEL_CONS_L_IDX&#009;&#009;4&#013;&#010;#define&#009;FUEL_CONS_H_IDX&#009;&#009;5&#013;&#010;#define&#009;RPM_H_IDX&#009;                6&#013;&#010;#define&#009;RPM_L_IDX&#009;&#009;7</desc>
+    <listentimeout>100</listentimeout>
+    <packetbodylength>8</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>8</packetsize>
+    <headerstring size="2">F5FD</headerstring>
+</ADXCLISTENPACKET>
+
+<ADXCLISTENPACKET id="LISTENFOROCTET" idhash="0xBE5CFD8B" title="Listen for Octet4" flags="0x00000001">
+    <desc>digiTool frame</desc>
+    <listentimeout>400</listentimeout>
+    <packetbodylength>8</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>8</packetsize>
+    <headerstring size="2">F5F9</headerstring>
+</ADXCLISTENPACKET>
